@@ -1,0 +1,17 @@
+.sandbox {
+    display: flex;  /* Define o contêiner como um flexbox */
+    flex-direction: column;  /* Alinha os itens em uma coluna */
+    align-items: center;  /* Centraliza os itens horizontalmente */
+    background-color: #f8fafc;  /* Define a cor de fundo */
+    font-family: Arial, sans-serif;  /* Define a fonte padrão */
+    padding: 20px;  /* Adiciona espaço interno ao redor do contêiner */
+    min-height: 100vh;  /* Define uma altura mínima de 100% da altura da tela */
+}
+
+.sandbox h2 {
+    color: #005b99;  /* Define a cor do texto do título */
+    font-size: 1.5em;  /* Define o tamanho da fonte do título */
+    margin: 15px 0;  /* Adiciona margem superior e inferior ao título */
+    text-align: center;  /* Centraliza o texto do título */
+} 
+

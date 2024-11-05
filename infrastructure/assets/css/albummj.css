@@ -9,9 +9,87 @@
 }
 
 .sandbox h2 {
-    color: #005b99;  /* Define a cor do texto do título */
+    color: #FFFFFF;  /* Define a cor do texto do título */
     font-size: 1.5em;  /* Define o tamanho da fonte do título */
     margin: 15px 0;  /* Adiciona margem superior e inferior ao título */
     text-align: center;  /* Centraliza o texto do título */
 } 
 
+.sandbox h3{
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.quadrado{
+    background-color: #F20519; /* Define a cor do quadrado */
+    width: 50px;     /* Define o tamanho da fonte do título */
+    height: 50px;  /* Define o tamanho da fonte do título */
+}
+
+.quadrado2{
+    background-color: #BF0404;
+    width: 50px;
+    height: 50px;
+}
+
+.quadrado3{
+    background-color: #590202;
+    width: 50px;
+    height: 50px;
+}
+
+.quadrado4{
+    background-color: #A62424;
+    width: 50px;
+    height: 50px;
+}
+
+.quadrado5{
+    background-color: #0D0D0D;
+    width: 50px;
+    height: 50px;
+}
+
+.quadrado6{
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+}
+
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+.imglateral{
+    width: 300px;                    /* Largura da div */
+    height: 550px;                   /* Altura da div */
+    background-image: url('/infrastructure/assets/img/michaelcapa.jpeg'); /* Caminho da imagem */
+    background-size: cover;          /* Ajusta a imagem para cobrir toda a área da div */
+    background-position: center;     /* Centraliza a imagem */
+    background-repeat: no-repeat;    /* Impede que a imagem se repita */
+    border: 2px solid #333;          /* Apenas para ver o contorno da div */
+}
+
+body {
+    background-image: url('/infrastructure/assets/img/thillerbackground.jpg'); 
+    background-size: cover;              
+    background-position: center;        
+    background-repeat: no-repeat;        
+    background-attachment: fixed;        
+}
+
+.container {
+    display: flex;
+    gap: 5px; /* Espaço opcional entre os quadrados */
+}
+
+.sandbox h1 {
+    color: #BF0404;
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}

@@ -66,12 +66,15 @@ section {
 
 .imglateral{
     width: 300px;                    /* Largura da div */
-    height: 550px;                   /* Altura da div */
+    height: 650px;                   /* Altura da div */
     background-image: url('/infrastructure/assets/img/michaelcapa.jpeg'); /* Caminho da imagem */
     background-size: cover;          /* Ajusta a imagem para cobrir toda a área da div */
     background-position: center;     /* Centraliza a imagem */
     background-repeat: no-repeat;    /* Impede que a imagem se repita */
     border: 2px solid #333;          /* Apenas para ver o contorno da div */
+    position: relative;
+
+    top: 150px;
 }
 
 body {
@@ -93,3 +96,33 @@ body {
     margin: 10px 0;
     text-align: center;
 }
+
+.titulos {
+    width: 1180px;
+    height: 610px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #FFFFFF;
+    position: relative; /* posiciona a div de forma relativa a position inicial*/
+    bottom: 504px; /* define em pixels a posicao*/
+    left: 50px; /* define em pixels a posicao*/
+}
+
+.song-container {
+    display: flex;
+    align-items: center;     /* Alinha o título e o player verticalmente */
+    margin-bottom: 15px;     /* Espaço entre cada música */
+}
+
+.song-container h2 {
+    margin: 0;
+    font-size: 18px;
+    width: 250px;           /* Largura fixa para os títulos */
+    text-align: left;       /* Alinha o texto do título à esquerda */
+}
+
+.song-container audio {
+    flex-grow: 1;            /* Permite que o player ocupe o espaço restante */
+}
+

@@ -73,8 +73,8 @@ section {
     background-repeat: no-repeat;    /* Impede que a imagem se repita */
     border: 2px solid #333;          /* Apenas para ver o contorno da div */
     position: relative;
-
-    top: 150px;
+    right: 25%;
+    top: 105px;
 }
 
 body {
@@ -88,6 +88,9 @@ body {
 .container {
     display: flex;
     gap: 5px; /* Espaço opcional entre os quadrados */
+    position: relative;
+    left: 0%;
+    top: 100%;
 }
 
 .sandbox h1 {
@@ -105,8 +108,8 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid #FFFFFF;
     position: relative; /* posiciona a div de forma relativa a position inicial*/
-    bottom: 504px; /* define em pixels a posicao*/
-    left: 50px; /* define em pixels a posicao*/
+    bottom: 550px; /* define em pixels a posicao*/
+    left: 10%; /* define em pixels a posicao*/
 }
 
 .song-container {
@@ -125,4 +128,26 @@ body {
 .song-container audio {
     flex-grow: 1;            /* Permite que o player ocupe o espaço restante */
 }
-
+.logo{
+    display: flex;
+    position: relative;
+    left: 40%;
+    top: 50%;
+}
+header nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; 
+    gap: 15px; 
+    padding: 0;
+    margin: 0; 
+}
+header nav ul li a {
+    color: #ffffff; 
+    text-decoration: none; 
+    font-weight: bold; 
+    padding: 5px 10px; 
+    transition: color 0.3s; 
+}
+header nav ul li a:hover {
+    color: #BF0404;
+}

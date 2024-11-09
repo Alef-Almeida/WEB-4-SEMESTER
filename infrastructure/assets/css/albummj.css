@@ -64,21 +64,8 @@ section {
     height: 100%;
 }
 
-.imglateral{
-    width: 300px;                    /* Largura da div */
-    height: 650px;                   /* Altura da div */
-    background-image: url('/infrastructure/assets/img/michaelcapa.jpeg'); /* Caminho da imagem */
-    background-size: cover;          /* Ajusta a imagem para cobrir toda a área da div */
-    background-position: center;     /* Centraliza a imagem */
-    background-repeat: no-repeat;    /* Impede que a imagem se repita */
-    border: 2px solid #333;          /* Apenas para ver o contorno da div */
-    position: relative;
-    right: 25%;
-    top: 105px;
-}
-
 body {
-    background-image: url('/infrastructure/assets/img/thillerbackground.jpg'); 
+    background-image: url('../img/thillerbackground2.jpg'); 
     background-size: cover;              
     background-position: center;        
     background-repeat: no-repeat;        
@@ -87,6 +74,18 @@ body {
 
 .container {
     display: flex;
+    justify-content: center; /* Centraliza as divs no contêiner */
+    align-items: stretch;     /* Faz com que ambas as divs tenham a mesma altura */
+    gap: 20px;               /* Espaço entre .imglateral e .titulos */
+    margin: 0 auto;
+    width: 90vw;             /* Ajusta a largura da página para responsividade */
+    max-width: 1200px;       /* Limita a largura máxima do contêiner */
+}
+
+
+.container-color {
+    display: flex;
+    justify-content: center;
     gap: 5px; /* Espaço opcional entre os quadrados */
     position: relative;
     left: 0%;
@@ -100,22 +99,35 @@ body {
     text-align: center;
 }
 
+.imglateral{
+    width: 20vw;                    /* Largura da div */
+    height: 72vh;                   /* Altura da div */
+    background-image: url('../img/michaelcapa.jpeg'); /* Caminho da imagem */
+    background-size: cover;          /* Ajusta a imagem para cobrir toda a área da div */
+    background-position: center;     /* Centraliza a imagem */
+    background-repeat: no-repeat;    /* Impede que a imagem se repita */
+    border: 2px solid #333;          /* Apenas para ver o contorno da div */
+    position: relative;
+    right: 10%;
+    top: 70px;
+}
+
 .titulos {
-    width: 1180px;
-    height: 610px;
+    width: 70vw;
+    height: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid #FFFFFF;
     position: relative; /* posiciona a div de forma relativa a position inicial*/
-    bottom: 550px; /* define em pixels a posicao*/
-    left: 10%; /* define em pixels a posicao*/
+    top: 7vh; /* define em pixels a posicao*/
+    right: 5vw; /* define em pixels a posicao*/
 }
 
 .song-container {
     display: flex;
     align-items: center;     /* Alinha o título e o player verticalmente */
-    margin-bottom: 15px;     /* Espaço entre cada música */
+    margin-bottom: 10px;     /* Espaço entre cada música */
 }
 
 .song-container h2 {
@@ -133,6 +145,7 @@ body {
     position: relative;
     left: 40%;
     top: 50%;
+    width: 20vw;
 }
 header nav ul {
     list-style: none; /* Remove os marcadores da lista */
@@ -150,4 +163,83 @@ header nav ul li a {
 }
 header nav ul li a:hover {
     color: #BF0404;
+}
+
+.foot-container{
+    position: relative;
+    top: 7vw;
+}
+
+@media (max-width: 768px) {     
+
+    .sandbox {
+        padding: 10px;
+    }
+
+        .imglateral {
+            display: none; /* Oculta a imagem lateral em telas menores */
+    }
+
+    .container-color {
+        flex-wrap: wrap; /* Faz com que os quadrados fiquem um sobre o outro */
+        gap: 10px;
+    }
+
+    .song-container {
+        flex-direction: column; /* Organiza o título e o player de áudio um sobre o outro */
+        text-align: center;
+    }
+
+    .titulos {
+        padding: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column; /* Organiza os links de navegação um sobre o outro */
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sandbox h2 {
+        font-size: 1.2em;
+    }
+
+    .sandbox h3 {
+        font-size: 1em;
+    }
+
+    .song-container h2 {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    header nav ul li a {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .titulos {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .imglateral {
+        width: 250px;
+        height: 550px;
+        right: 10%;
+        top: 50px;
+    }
+
+    .titulos {
+        width: 100%;
+        bottom: 0;
+    }
+
+    header nav ul {
+        gap: 10px; /* define um espaçamento entre os itens da lista de navegação */
+    }
 }

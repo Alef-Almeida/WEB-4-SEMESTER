@@ -1,0 +1,32 @@
+.tg  {
+    border-collapse:collapse;border-spacing:0;
+}
+
+.tg td {
+    border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;
+}
+
+.tg th{
+    border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;
+}
+.tg .tg-hbmh{
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;font-size:13px;text-align:center;
+    vertical-align:top;
+}
+
+.tg .tg-0lax{
+    text-align:left;vertical-align:top;
+}
+
+.tabelas {
+    margin-top: 10%;
+    display: flex;  /* Define o contêiner como um flexbox */
+    flex-direction: column;  /* Alinha os itens em uma coluna */
+    align-items: center;  /* Centraliza os itens horizontalmente */
+    background-color: #f8fafc;  /* Define a cor de fundo */
+    font-family: Arial, sans-serif;  /* Define a fonte padrão */
+    padding: 20px;  /* Adiciona espaço interno ao redor do contêiner */
+    min-height: 100vh;  /* Define uma altura mínima de 100% da altura da tela */
+}

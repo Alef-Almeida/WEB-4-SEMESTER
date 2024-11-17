@@ -92,7 +92,9 @@ body {
         justify-content: center;
         align-items: center;
     }
-
+    .titulos{
+        border-radius: 10px;
+    }
     .imglateral {
         width: 100%;
     }
@@ -121,17 +123,21 @@ body {
     height: 100%;
     border: 2px solid #333;   
     display: flex;
-    
+    position: relative;
     left: 40%;
 }
 
 .titulos {
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid #FFFFFF;
-    width:45%;       /* Apenas para ver o contorno da div */
-    height: 10%;
+    height: 100%;
+    width: 40%;
+    display: flex;
     position: relative;
-    right: 20%;
+    right: 15%;
+    border-radius: 10px;
+    align-items: center;
+    margin: auto;
 }
 
 .song-container {
@@ -154,10 +160,10 @@ body {
 }
 .logo{
     display: flex;
-    position: relative;
     left: 40%;
     top: 50%;
     width: 20vw;
+    margin: auto;
 }
 header nav ul {
     list-style: none; /* Remove os marcadores da lista */
@@ -203,6 +209,13 @@ header nav ul li a:hover {
         align-items: center;
         gap: 5px;
     }
+    .titulos{
+        border-radius: 10px;
+    }
+    .imglateral{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -226,6 +239,13 @@ header nav ul li a:hover {
 
     .titulos {
         font-size: 0.9em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .imglateral{
+        display: none;
     }
 }
 
@@ -233,10 +253,34 @@ header nav ul li a:hover {
 
     .titulos {
         width: 100%;
-        bottom: 0;
+        display: flex;
+        justify-content: center;
+        right: 6%;
+        border-radius: 10px;
+    }
+    .imglateral{
+        display: none;
     }
 
     header nav ul {
         gap: 10px; /* define um espaçamento entre os itens da lista de navegação */
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .logo{
+            display: flex;
+            justify-content: center;
+        }
+        .titulos {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            right: 3%;
+            border-radius: 10px;
+        }
+        .imglateral{
+            display: none;
+            
+        }
     }
 }

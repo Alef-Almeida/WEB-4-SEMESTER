@@ -1,286 +1,176 @@
 .sandbox {
-    display: flex;  /* Define o contêiner como um flexbox */
-    flex-direction: column;  /* Alinha os itens em uma coluna */
-    align-items: center;  /* Centraliza os itens horizontalmente */
-    background-color: #f8fafc;  /* Define a cor de fundo */
-    font-family: Arial, sans-serif;  /* Define a fonte padrão */
-    padding: 20px;  /* Adiciona espaço interno ao redor do contêiner */
-    min-height: 100vh;  /* Define uma altura mínima de 100% da altura da tela */
+    text-align: center; /* Alinha o texto do conteúdo */
+    padding: 20px;
 }
-
-main {
-    width: 100vw;
+body {
+    background-image: url('../img/thillerbackground2.jpg'); 
+    background-size: cover;  
+    background-position: center;     
+    background-repeat: no-repeat;  
+    background-attachment: fixed;    
+}
+.sandbox h2, .sandbox h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
 }
 
 .sandbox h2 {
-    color: #FFFFFF;  /* Define a cor do texto do título */
-    font-size: 1.5em;  /* Define o tamanho da fonte do título */
-    margin: 15px 0;  /* Adiciona margem superior e inferior ao título */
-    text-align: center;  /* Centraliza o texto do título */
-} 
-
-.sandbox h3{
-    color: #ffffff;
-    font-size: 1.5em;
-    margin: 10px 0;
-    text-align: center;
+    color: #BF0404; 
+}
+.mb-0 {
+    margin-bottom: 0 !important;
+    color: #F20519;
+}
+.sandbox h3 {
+    color: #FFFFFF;
 }
 
-.quadrado{
-    background-color: #F20519; /* Define a cor do quadrado */
-    width: 50px;     /* Define o tamanho da fonte do título */
-    height: 50px;  /* Define o tamanho da fonte do título */
-}
-
-.quadrado2{
-    background-color: #BF0404;
+.quadrado, .quadrado2, .quadrado3, .quadrado4, .quadrado5, .quadrado6 {
     width: 50px;
     height: 50px;
-}
-
-.quadrado3{
-    background-color: #590202;
-    width: 50px;
-    height: 50px;
-}
-
-.quadrado4{
-    background-color: #A62424;
-    width: 50px;
-    height: 50px;
-}
-
-.quadrado5{
-    background-color: #0D0D0D;
-    width: 50px;
-    height: 50px;
-}
-
-.quadrado6{
-    background-color: #ffffff;
-    width: 50px;
-    height: 50px;
+    border-radius: 4px;
 }
 
 
-section {
-    width: 100%;
-    height: 100%;
-}
+/* Paleta de cores */
+.quadrado { background-color: #F20519; }
+.quadrado2 { background-color: #BF0404; }
+.quadrado3 { background-color: #590202; }
+.quadrado4 { background-color: #A62424; }
+.quadrado5 { background-color: #0D0D0D; }
+.quadrado6 { background-color: #FFFFFF; }
 
-body {
-    background-image: url('../img/thillerbackground2.jpg'); 
-    background-size: cover;              
-    background-position: center;        
-    background-repeat: no-repeat;        
-    background-attachment: fixed;        
-}
-
-.container {
-    display: flex;
-    justify-content: center; /* Centraliza as divs no contêiner */
-    justify-content: space-between;
-    max-width: 100vw;
-    margin: 24px;
-    gap: 16px;
-
-}
-
-@media(width < 1024px) {
-    .container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .titulos{
-        border-radius: 10px;
-    }
-    .imglateral {
-        width: 100%;
-    }
-}
-
-
-.container-color {
-    display: flex;
-    justify-content: center;
-    gap: 5px; /* Espaço opcional entre os quadrados */
+/* Ajuste para as imagens laterais */
+.imglateral img {
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 61.5%;
     position: relative;
-    left: 0%;
-    top: 100%;
+    right: 125%;
 }
 
-.sandbox h1 {
-    color: #BF0404;
-    font-size: 1.5em;
-    margin: 10px 0;
-    text-align: center;
+/* Ajustes para a seção de títulos */
+.titulos {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid #FFFFFF;
+    width: 150%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    left: 45%;
+    overflow: hidden; /* Garante que o conteúdo não vaze para fora da div */
     
 }
 
-.imglateral img {
-    width:  40%;
-    height: 100%;
-    border: 2px solid #333;   
-    display: flex;
-    position: relative;
-    left: 40%;
+.material-symbols-outlined { /* icons do google, tenho ideia nenhuma do que quer dizer isso ai */
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
-.titulos {
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 2px solid #FFFFFF;
-    height: 100%;
-    width: 40%;
-    display: flex;
-    position: relative;
-    right: 15%;
-    border-radius: 10px;
-    align-items: center;
-    margin: auto;
-}
 
+/* Ajuste para o container de músicas */
 .song-container {
+    margin-bottom: 10px;
     display: flex;
-    flex-direction: row;
-    align-items: left;     /* Alinha o título e o player verticalmente */
-    margin-bottom: 10px;     /* Espaço entre cada música */
+    align-items: center;
 }
-
 
 .song-container h2 {
     margin: 0;
     font-size: 18px;
-    width: 250px;           /* Largura fixa para os títulos */
-    text-align: left;       /* Alinha o texto do título à esquerda */
+    width: 250px;
+    text-align: left;
 }
 
 .song-container audio {
-    flex-grow: 1;            /* Permite que o player ocupe o espaço restante */
-}
-.logo{
-    display: flex;
-    left: 40%;
-    top: 50%;
-    width: 20vw;
-    margin: auto;
-}
-header nav ul {
-    list-style: none; /* Remove os marcadores da lista */
-    display: flex; 
-    gap: 15px; 
-    padding: 0;
-    margin: 0; 
-}
-header nav ul li a {
-    color: #ffffff; 
-    text-decoration: none; 
-    font-weight: bold; 
-    padding: 5px 10px; 
-    transition: color 0.3s; 
-}
-header nav ul li a:hover {
-    color: #BF0404;
+    flex-grow: 1;
 }
 
-.foot-container{
-    position: relative;
-    top: 7vw;
-}
-
-@media (max-width: 768px) {     
-
-    .sandbox {
-        padding: 10px;
-    }
-
-    .container-color {
-        flex-wrap: wrap; /* Faz com que os quadrados fiquem um sobre o outro */
-        gap: 10px;
-    }
-
-    .song-container {
-        flex-direction: column; /* Organiza o título e o player de áudio um sobre o outro */
-        text-align: center;
-    }
-
-    header nav ul {
-        flex-direction: column; /* Organiza os links de navegação um sobre o outro */
-        align-items: center;
-        gap: 5px;
+    @media (max-width: 480px) {
+        .sandbox h2 {
+            font-size: 1em;
+        }
+        .sandbox h3 {
+            font-size: 0.9em;
+        }
+        .song-container h2 {
+            font-size: 14px;
+        }
+        header nav ul li a {
+            font-size: 12px;
     }
     .titulos{
-        border-radius: 10px;
-    }
-    .imglateral{
         display: flex;
         justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .sandbox h2 {
-        font-size: 1.2em;
+        margin: auto;
     }
 
-    .sandbox h3 {
-        font-size: 1em;
-    }
-
-    .song-container h2 {
-        font-size: 16px;
-        width: 100%;
-    }
-
-    header nav ul li a {
-        padding: 5px;
-        font-size: 14px;
-    }
-
-    .titulos {
-        font-size: 0.9em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-    }
-    .imglateral{
-        display: none;
-    }
-}
-
-@media (max-width: 1024px) {
-
-    .titulos {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        right: 6%;
-        border-radius: 10px;
-    }
-    .imglateral{
-        display: none;
-    }
-
-    header nav ul {
-        gap: 10px; /* define um espaçamento entre os itens da lista de navegação */
-    }
-
+    /* Ajustes para tablets e iPads */
     @media (min-width: 768px) and (max-width: 1024px) {
-        .logo{
-            display: flex;
-            justify-content: center;
-        }
-        .titulos {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            right: 3%;
-            border-radius: 10px;
-        }
-        .imglateral{
-            display: none;
-            
-        }
+    .sandbox h2 {
+        font-size: 1.3em; 
+    }
+    .sandbox h3 {
+        font-size: 1.1em;
+    }
+    .song-container h2 {
+        font-size: 16px; 
+        width: 100%;
+    }
+    header nav ul li a {
+        padding: 8px;
+        font-size: 16px; 
+    }
+    .titulos {
+        font-size: 1em;
+        width: 80%; 
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 15px; 
+    }
+    .imglateral {
+        margin: 0 auto;
+        width: 50%; 
+        height: 50%;
+    }
+}
+    /* Ajustes para celulares */
+    @media (max-width: 768px) {
+    .titulos {
+        width: 95%;
+        padding: 15px; 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .song-container{
+        display: block;
+    }
+    .imglateral{
+        display: block;
+        width: 0%;
+    }
+    
+}
+
+    /* Ajustes para telas muito pequenas (celulares) */
+    @media (max-width: 480px) {
+    .titulos {
+        width: 100%; 
+        padding: 10px; 
+        left: 0;
+        transform: translateX(0);
+    }
+    .song-container{
+        display: block;
+    }
+    .imglateral{
+        display: block;
+        width: 0%;
+    }
     }
 }
